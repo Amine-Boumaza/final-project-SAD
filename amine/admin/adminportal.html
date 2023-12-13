@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome,
+        <?php echo $_SESSION["username"]; ?>!
+    </h2>
+    <h3>Admin Portal</h3>
+
+    <button onclick="location.href='manageStudents.php'">Manage Students</button>
+    <button onclick="location.href='manage_grades.php'">Manage Grades</button>
+    <button onclick="location.href='manage_specializations.php'">Manage Specializations</button>
+    <button onclick="location.href='view_averages_choices.php'">View Averages and Choices</button>
+    <button onclick="location.href='provide_recommendations.php'">Provide Recommendations</button>
+
+    <br>
+
+    <a href="logout.php">Logout</a>
+</body>
+
+</html>
